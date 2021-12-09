@@ -5,8 +5,142 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Juego_de_Peliculas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Juego de Películas"
+        Height="600"
+        Width="900"
+        MinHeight="600"
+        MinWidth="900">
     <Grid>
-        
+
+        <Grid>
+            <TabControl>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/assets/photo-booth.png"
+                                   Height="35" />
+                            <TextBlock Text="Juego"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TabItem.Content>
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition Height="1.5*" />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+
+                            <DockPanel Grid.Column="0"
+                                       Grid.Row="0"
+                                       Grid.RowSpan="3">
+
+                                <TextBlock Text="Cartel de la película"
+                                           DockPanel.Dock="Top"
+                                           HorizontalAlignment="Center" />
+
+                                <Border BorderBrush="Black"
+                                        BorderThickness="2"
+                                        Height="300"
+                                        Width="220"
+                                        VerticalAlignment="Top">
+                                    <Image x:Name="imagenCartelPeliculaImage">
+
+                                    </Image>
+                                </Border>
+
+                            </DockPanel>
+
+                            <DockPanel Grid.Column="1"
+                                       Grid.Row="0"
+                                       Grid.RowSpan="2">
+
+                                <TextBlock Text="Puntuación"
+                                           DockPanel.Dock="Top"
+                                           HorizontalAlignment="Center" />
+
+                                <Border BorderBrush="Black"
+                                        BorderThickness="2"
+                                        Height="100"
+                                        Width="220"
+                                        VerticalAlignment="Top">
+
+                                </Border>
+
+                            </DockPanel>
+
+
+                            <StackPanel Grid.Column="2" Grid.Row="0">
+                                <Button Margin="5,15">
+                                    Nueva Partida
+                                </Button>
+
+                                <Button Margin="5,15">
+                                    Finalizar Partida
+                                </Button>
+                            </StackPanel>
+
+                            <DockPanel Grid.Column="1"
+                                       Grid.Row="2"
+                                       Grid.ColumnSpan="2">
+
+                                <TextBlock Text="Titulo de la película"
+                                           DockPanel.Dock="Top"
+                                           HorizontalAlignment="Left" />
+
+                                <DockPanel>
+                                    <Button DockPanel.Dock="Right"
+                                            Height="30"
+                                            Width="90"
+                                            Margin="0,0,10,0"
+                                            VerticalAlignment="Top">Validar</Button>
+                                    <TextBox Height="30"
+                                             Margin="0,0,10,0"
+                                             VerticalAlignment="Top"></TextBox>
+
+                                </DockPanel>
+
+
+                            </DockPanel>
+
+
+                        </Grid>
+
+
+
+                    </TabItem.Content>
+                </TabItem>
+
+
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/assets/system-preferences.png"
+                                   Height="35" />
+                            <TextBlock Text="Configuración"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <TabItem.Content>
+
+                        <TextBlock></TextBlock>
+
+
+
+                    </TabItem.Content>
+                </TabItem>
+            </TabControl>
+        </Grid>
     </Grid>
 </Window>
