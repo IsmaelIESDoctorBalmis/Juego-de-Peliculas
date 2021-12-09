@@ -26,6 +26,12 @@
                     <TabItem.Content>
 
                         <Grid>
+                            <Grid.Background>
+                                <ImageBrush ImageSource="/assets/cine.jpg"
+                                            Stretch="UniformToFill">
+                                    
+                                </ImageBrush>
+                            </Grid.Background>
 
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="2*" />

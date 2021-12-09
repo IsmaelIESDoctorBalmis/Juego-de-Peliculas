@@ -127,5 +127,8 @@
   <ItemGroup>
     <Resource Include="assets\system-preferences.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\cine.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
