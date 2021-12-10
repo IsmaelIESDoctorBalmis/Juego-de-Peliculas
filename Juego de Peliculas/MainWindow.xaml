@@ -9,7 +9,8 @@
         Height="600"
         Width="900"
         MinHeight="600"
-        MinWidth="900">
+        MinWidth="900"
+        Icon="assets/generos/grinch.ico">
     <Grid>
 
         <Grid>
@@ -119,6 +120,35 @@
 
 
                             </DockPanel>
+
+
+
+                            <DockPanel Grid.Column="1"
+                                       Grid.Row="3"
+                                       Grid.ColumnSpan="2"
+                                       >
+
+                                <CheckBox Content="Ver Pista" DockPanel.Dock="Top" Foreground="White">
+                                    
+                                </CheckBox>
+
+                                <DockPanel>
+                                    
+                                    <TextBox Height="30"
+                                             Margin="0,0,10,0"
+                                             VerticalAlignment="Top"></TextBox>
+
+                                </DockPanel>
+
+
+                            </DockPanel>
+
+                            <UniformGrid Columns="5" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2">
+
+                                <Image Source="assets/generos/infantil.png"></Image>
+                                <Image Source="assets/generos/ciencia-ficcion.png"></Image>
+                                
+                            </UniformGrid>
 
 
                         </Grid>
